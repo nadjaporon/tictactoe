@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7c1106c071.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1>Tic Tac Toe</h1>
+        <div class='startGameContainer'>
+            <label for='player1'>Player 1 <input type='text' name='player1' placeholder='enter name'></label>
+            <label for='player1'>Player 2 <input type='text' name='player2' placeholder='enter name'></label>
+            <label for='comp' class='checkbox'>Play against Computer</label><input type='checkbox' name='comp'>
+            <i class="fas fa-gamepad play-game" id='btn-startGame'></i>
+        </div>
+        <div class='gameContainer'>
+            <h2 class='gamestatus'>It's your turn, Player 1!</h2>
+            <div class='board'>
+                <div data-cell-index='0'></div>
+                <div data-cell-index='1'></div>
+                <div data-cell-index='2'></div>
+
+                <div data-cell-index='3'></div>
+                <div data-cell-index='4'></div>
+                <div data-cell-index='5'></div>
+
+                <div data-cell-index='6'></div>
+                <div data-cell-index='7'></div>
+                <div data-cell-index='8'></div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div class='footer'><i class="fas fa-gamepad play-game" id='btn-restartGame'></i></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
